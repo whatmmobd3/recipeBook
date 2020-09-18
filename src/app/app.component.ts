@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'complete-guide';
+  loaderFeature = 'recipe'
+
+  onNavigate(element: string){
+    this.loaderFeature = element
+
+  }
 }
